@@ -23,6 +23,7 @@ export default function Currency() {
         })
             .then(response => {
                 setResult('Converted Amount : ' + response.data[baseCurrency.toUpperCase()]);
+                console.log('e')
             }).catch(e => console.log(e))
     }
     function handleSubmit(event) {
