@@ -10,8 +10,7 @@ const Delete = () => {
   };
   const [result, setResult] = useState();
   const handleChange = () => {
-    axios.delete(`https://immense-badlands-43639.herokuapp.com/DB/Delete?id=${id}`, {
-    })
+    axios.delete(`https://immense-badlands-43639.herokuapp.com/DB/Delete?id=${id}`, {})
       .then(response => {
         setResult(response.data.message);
         document.getElementById('out').style.display='inline'
